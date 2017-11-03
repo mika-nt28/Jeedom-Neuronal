@@ -1,0 +1,11 @@
+{
+	"id" : "Neuronal",
+	"name" : "Centre Neuronal",
+	"description" : "Rendez Jeedom intelligent en créant des réseaux neuronaux",
+	"licence" : "AGPL",
+	"author" : "Halbout Michael",
+	"require" : "3.0",
+	"category" : "automatisation",
+	"hasOwnDeamon" : true,
+	"hasDependency" : true
+}

@@ -96,6 +96,13 @@ $eqLogics = eqLogic::byType('Neuronal');
 									?>
 								</div>
 							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">{{Gestion Temporel}}</label>
+								<div class="col-md-8">
+									<label>{{Activer}}</label>
+									<input type="checkbox" class="eqLogicAttr" data-label-text="{{Activer}}" data-l1key="configuration" data-l2key="temporel"/>
+								</div>
+							</div>
 						</div>
 					</fieldset> 
 				</form>
@@ -116,42 +123,28 @@ $eqLogics = eqLogic::byType('Neuronal');
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active" id="tab_entree_neurone">
-						<div class="form-group">
-							<form class="form-horizontal">
-								<legend>{{Commande d'entrée du neurone}}</legend>
-								<div class="btn-group pull-right" role="group">
-									<a class="CommandeAttr btn btn-default btn-sm" data-l1key="add"><i class="fa fa-flag"></i>{{Ajouter}}</a>
-								</div>	
-								<div class="row NeuroneEntree">
-									<input type="hidden" class="cmdAttr" data-l1key="id"/>
-									<input type="hidden" class="cmdAttr" data-l1key="name"/>
-									<input type="hidden" class="cmdAttr" data-l1key="logicalId"/>
-									<input type="hidden" class="cmdAttr" data-l1key="type"/>
-									<input type="hidden" class="cmdAttr" data-l1key="subType"/>
-									<input type="hidden" class="cmdAttr" data-l1key="configuration" data-l2key="valide"/>	
-								</div>
-							</form>
-						</div>
+						<table id="table_Entree" class="table table-bordered table-condensed">
+							<thead>
+								<tr>
+									<th>Commande</th>
+									<th>Parametre</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
 					</div>
 					<div class="tab-pane" id="tab_sortie_neurone">
-						<div class="form-group">
-							<form class="form-horizontal">
-								<legend>{{Commande de sortie du neurone}}</legend>
-								<div class="btn-group pull-right" role="group">
-									<a class="CommandeAttr btn btn-default btn-sm" data-l1key="add"><i class="fa fa-flag"></i>{{Ajouter}}</a>
-								</div>	
-								<div class="row NeuroneSortie">
-									<input type="hidden" class="cmdAttr" data-l1key="id"/>
-									<input type="hidden" class="cmdAttr" data-l1key="name"/>
-									<input type="hidden" class="cmdAttr" data-l1key="logicalId"/>
-									<input type="hidden" class="cmdAttr" data-l1key="type"/>
-									<input type="hidden" class="cmdAttr" data-l1key="subType"/>
-									<input type="hidden" class="cmdAttr" data-l1key="configuration" data-l2key="valide"/>	
-								</div>
-							</form>
-						</div>
+						<table id="table_Sortie" class="table table-bordered table-condensed">
+							<thead>
+								<tr>
+									<th>Commande</th>
+									<th>Parametre</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
 					</div>
-					<div class="tab-pane" id="tab_calibration">
+					<div class="tab-pane" id="tab_calibration" style="width: 90%; overflow:auto;">
 						<table id="table_Calibration" class="table table-bordered table-condensed">
 							<thead>
 								<tr>
