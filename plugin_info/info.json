@@ -10,5 +10,6 @@
 	"hasDependency" : true,
 	"issue" : "https://github.com/mika-nt28/Jeedom-Neuronal/issues",
  	"changelog" : "https://github.com/mika-nt28/Jeedom-Neuronal/commits/master",
- 	"documentation" : "https://jeedom.github.io/documentation/third_plugin/Neuronal/fr_FR/index.html"
+ 	"documentation" : "https://jeedom.github.io/documentation/third_plugin/Neuronal",
+ 	"changelog" : "https://jeedom.github.io/documentation/third_plugin/Neuronal"
 }
